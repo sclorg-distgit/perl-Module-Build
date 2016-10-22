@@ -7,7 +7,7 @@
 Name:           %{?scl_prefix}perl-Module-Build
 Epoch:          2
 Version:        %{cpan_version_major}%{?cpan_version_minor:.%cpan_version_minor}
-Release:        5%{?dist}
+Release:        4%{?dist}
 Summary:        Build and install Perl modules
 License:        GPL+ or Artistic
 Group:          Development/Libraries
@@ -157,9 +157,6 @@ LANG=C TEST_SIGNATURE=1 MB_TEST_EXPERIMENTAL=1 %{?scl:scl enable %{scl} '}./Buil
 %{_mandir}/man3/*
 
 %changelog
-* Sun Jul 24 2016 Petr Pisar <ppisar@redhat.com> - 2:0.42.18-5
-- Rebuild without bootstrap
-
 * Tue Jul 12 2016 Petr Pisar <ppisar@redhat.com> - 2:0.42.18-4
 - SCL
 
